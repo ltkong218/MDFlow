@@ -12,7 +12,7 @@ Detailed framework of reliable mutual knowledge distillation for unsupervised op
 ![](./data/mdflow.png)
 
 ## Highlights
-To our best knowledge, it is the first time that mutual knowledge distillation framework is introduced to unsupervised optical flow, which can efficiently leverage countless unlabeled video sequences for optical flow learning. Moreover, proposed MDFlow framework is general and does not depend on particular optical flow architectures and unsupervised initialization method.
+To our best knowledge, it is the first time that mutual knowledge distillation framework is introduced to unsupervised optical flow, which can efficiently leverage countless unlabeled video sequences for optical flow learning. Moreover, proposed MDFlow framework is general and does not depend on particular optical flow architectures (any efficient teacher flow network, any powerful student flow network) and unsupervised initialization method.
 
 ## Environment
 Python == 3.6.x
@@ -25,11 +25,11 @@ Make sure that [<code>Pytorch-Correlation-extension</code>](https://github.com/C
 
 ## Demos
 
-Predicted optical flow and occlusion map of efficient FastFlowNet on Sintel
+Predicted bidirectional optical flow and occlusion map of efficient FastFlowNet on MPI Sintel.
 
 ![](./data/output_sintel.png)
 
-Predicted optical flow and occlusion map of efficient FastFlowNet on KITTI
+Predicted bidirectional optical flow and occlusion map of efficient FastFlowNet on KITTI 2015.
 
 ![](./data/output_kitti.png)
 
