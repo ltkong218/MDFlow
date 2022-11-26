@@ -14,7 +14,7 @@ Python == 3.6.x
 
 PyTorch == 1.2.0
 
-Download our pre-trained [FastFlowNet](https://github.com/ltkong218/FastFlowNet) teacher network and [RAFT](https://github.com/princeton-vl/RAFT) student network in this [link](https://www.dropbox.com/scl/fo/sfcwx434dhwxter5tgemr/h?dl=0&rlkey=jxp1yqqh0ubm7vgbdj5fyzfb4), and then put file <code> checkpoints</code> into the root dir.
+Download our pre-trained [FastFlowNet](https://github.com/ltkong218/FastFlowNet) teacher network and [RAFT](https://github.com/princeton-vl/RAFT) student network in this [link](https://www.dropbox.com/sh/m99c01b9140v0r2/AAAVTX27wEMlMGTXnRIeL9QMa?dl=0), and then put file <code> checkpoints</code> into the root dir.
 
 Make sure that [<code>Pytorch-Correlation-extension</code>](https://github.com/ClementPinard/Pytorch-Correlation-extension) is installed successfully. You can refer to [FastFlowNet](https://github.com/ltkong218/FastFlowNet) for more installation details.
 
