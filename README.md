@@ -6,6 +6,7 @@ Authors: [Lingtong Kong](https://scholar.google.com.hk/citations?user=KKzKc_8AAA
 ## Abstract
 Recent works have shown that optical flow can be learned by deep networks from unlabelled image pairs based on brightness constancy assumption and smoothness prior. Current approaches additionally impose an augmentation regularization term for continual self-supervision, which has been proved to be effective on difficult matching regions. However, this method also amplify the inevitable mismatch in unsupervised setting, blocking the learning process towards optimal solution. To break the dilemma, we propose a novel mutual distillation framework to transfer reliable knowledge back and forth between the teacher and student networks for alternate improvement. Concretely, taking estimation of off-the-shelf unsupervised approach as pseudo labels, our insight locates at defining a confidence selection mechanism to extract relative good matches, and then add diverse data augmentation for distilling adequate and reliable knowledge from teacher to student. Thanks to the decouple nature of our method, we can choose a stronger student architecture for sufficient learning. Finally, better student prediction is adopted to transfer knowledge back to the efficient teacher without additional costs in real deployment. Rather than formulating it as a supervised task, we find that introducing an extra unsupervised term for multi-target learning achieves best final results. Extensive experiments show that our approach, termed MDFlow, achieves state-of-the-art real-time accuracy and generalization ability on challenging benchmarks.
 
+## Framework
 Detailed framework of reliable mutual knowledge distillation for unsupervised optical flow.
 
 ![](./data/mdflow.png)
@@ -24,10 +25,20 @@ Make sure that [<code>Pytorch-Correlation-extension</code>](https://github.com/C
 
 ## Demos
 
-Unsupervised Optical Flow and Occlusion Map on Sintel
+Predicted optical flow and occlusion map of efficient FastFlowNet on Sintel
 
 ![](./data/output_sintel.png)
 
-Unsupervised Optical Flow and Occlusion Map on KITTI
+Predicted optical flow and occlusion map of efficient FastFlowNet on KITTI
 
 ![](./data/output_kitti.png)
+
+## Citation
+When using any parts of the Software or the Paper in your work, please cite the following paper:
+<pre><code>@Article{Kong_2022_TCSVT,
+  author={Kong, Lingtong and Yang, Jie}, 
+  journal={IEEE Transactions on Circuits and Systems for Video Technology}, 
+  title={MDFlow: Unsupervised Optical Flow Learning by Reliable Mutual Knowledge Distillation}, 
+  year={2022}, 
+  doi={10.1109/TCSVT.2022.3205375}
+}</code></pre>
