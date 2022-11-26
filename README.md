@@ -1,5 +1,5 @@
 # MDFlow: Unsupervised Optical Flow Learning by Reliable Mutual Knowledge Distillation
-The official PyTorch implementation of [MDFlow](https://arxiv.org/abs/2211.06018) (TCSVT 2022).
+The official PyTorch implementation of [MDFlow](https://arxiv.org/abs/2211.06018) (TCSVT 2022) (Only for Evaluation).
 
 Authors: [Lingtong Kong](https://scholar.google.com.hk/citations?user=KKzKc_8AAAAJ&hl=zh-CN), [Jie Yang](http://www.pami.sjtu.edu.cn/jieyang)
 
