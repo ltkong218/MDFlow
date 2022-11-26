@@ -8,7 +8,7 @@ Recent works have shown that optical flow can be learned by deep networks from u
 
 Detailed framework of reliable mutual knowledge distillation for unsupervised optical flow.
 
-![](./data/mdflow.pdf)
+![](./data/mdflow.png)
 
 ## Highlights
 To our best knowledge, it is the first time that mutual knowledge distillation framework is introduced to unsupervised optical flow, which can efficiently leverage countless unlabeled video sequences for optical flow learning. Moreover, proposed MDFlow framework is general and does not depend on particular optical flow architectures and unsupervised initialization method.
