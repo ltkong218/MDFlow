@@ -1,6 +1,8 @@
 # MDFlow: Unsupervised Optical Flow Learning by Reliable Mutual Knowledge Distillation
 The official PyTorch implementation of [MDFlow](https://arxiv.org/abs/2211.06018) (TCSVT 2022) (Only for Evaluation).
 
+This repository provides MDFlow algorithm pre-trained [FastFlowNet](https://github.com/ltkong218/FastFlowNet) on Flying Chairs, GTA V, MPI Sintel and KITTI 2015 sequences.
+
 Authors: [Lingtong Kong](https://scholar.google.com.hk/citations?user=KKzKc_8AAAAJ&hl=zh-CN), [Jie Yang](http://www.pami.sjtu.edu.cn/jieyang)
 
 ## Abstract
@@ -12,7 +14,7 @@ Detailed framework of reliable mutual knowledge distillation for unsupervised op
 ![](./data/mdflow.png)
 
 ## Highlights
-To our best knowledge, it is the first time that mutual knowledge distillation framework is introduced to unsupervised optical flow, which can efficiently leverage countless unlabeled video sequences for optical flow learning. Moreover, proposed MDFlow framework is general and does not depend on particular optical flow architectures (any efficient teacher flow network, any powerful student flow network) and unsupervised initialization method.
+To our best knowledge, it is the first time that mutual knowledge distillation framework is introduced to unsupervised optical flow, which can efficiently leverage countless unlabeled video sequences for optical flow learning. Moreover, proposed MDFlow framework is general and does not depend on particular optical flow architectures (it can use any efficient teacher flow network and any powerful student flow network) and unsupervised initialization method.
 
 ## Environment
 Python == 3.6.x
@@ -25,7 +27,7 @@ Make sure that [<code>Pytorch-Correlation-extension</code>](https://github.com/C
 
 ## Demos
 
-Predicted bidirectional optical flow and occlusion map of efficient FastFlowNet on GTAV.
+Predicted bidirectional optical flow and occlusion map of efficient FastFlowNet on GTA V.
 
 ![](./data/output_gtav.png)
 
