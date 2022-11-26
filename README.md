@@ -1,5 +1,5 @@
 # MDFlow: Unsupervised Optical Flow Learning by Reliable Mutual Knowledge Distillation
-The official PyTorch implementation of [MDFlow](https://arxiv.org/abs/2211.06018) (TCSVT 2022) (Only for Evaluation).
+The official PyTorch implementation of [MDFlow](https://arxiv.org/abs/2211.06018) (TCSVT 2022) (Only for Evaluation and Downstream Applications).
 
 This repository provides MDFlow algorithm pre-trained [FastFlowNet](https://github.com/ltkong218/FastFlowNet) on Flying Chairs, GTA V, MPI Sintel and KITTI 2015 sequences.
 
