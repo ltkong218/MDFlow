@@ -25,6 +25,17 @@ Download our pre-trained [FastFlowNet](https://github.com/ltkong218/FastFlowNet)
 
 Make sure that [<code>Pytorch-Correlation-extension</code>](https://github.com/ClementPinard/Pytorch-Correlation-extension) is installed successfully. You can refer to [FastFlowNet](https://github.com/ltkong218/FastFlowNet) for more installation details.
 
+## Performance
+
+Unsupervised optical flow accuracy on Sintel Clean and KITTI 2015 datasets. Note that MDFlow-Fast uses the efficient FastFlowNet for evaluation, which can achieve on par unsupervised optical flow accuracy with other heavier methods.
+
+|             | Sintel Clean Train (AEPE) | Sintel Clean Test (AEPE) | KITTI 2015 Train (AEPE) | KITTI 2015 Test (Fl-all) |
+|:-----------:|:------------------------:|:------------------------:|:------------------------:|:------------------------:|
+|    ARFlow   |           2.79           |           4.78           |           2.85           |          11.80%          |
+|    SimFlow  |           2.86           |           5.92           |           5.19           |          13.38%          |
+|    UFlow    |           2.50           |           5.21           |           2.71           |          11.13%          |
+| MDFlow-Fast |           2.53           |           4.73           |           3.02           |          11.43%          |
+
 ## Demos
 
 Predicted bidirectional optical flow and occlusion map of efficient FastFlowNet on GTA V.
