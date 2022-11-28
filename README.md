@@ -13,7 +13,6 @@ Detailed framework of reliable mutual knowledge distillation for unsupervised op
 
 ![](./data/mdflow.png)
 
-## Highlights
 To our best knowledge, it is the first time that mutual knowledge distillation framework is introduced to unsupervised optical flow, which can efficiently leverage countless unlabeled video sequences for optical flow learning. Moreover, proposed MDFlow framework is general and does not depend on particular optical flow architectures (it can use any efficient teacher flow network and any powerful student flow network) and unsupervised initialization method.
 
 ## Environment
@@ -27,7 +26,7 @@ Make sure that [<code>Pytorch-Correlation-extension</code>](https://github.com/C
 
 ## Performance
 
-Unsupervised optical flow accuracy on Sintel Clean and KITTI 2015 datasets. Note that MDFlow-Fast uses the efficient FastFlowNet for evaluation, which can achieve on par unsupervised optical flow accuracy with other heavier methods.
+Unsupervised optical flow accuracy on Sintel Clean and KITTI 2015 datasets. Note that MDFlow-Fast uses the efficient [FastFlowNet](https://github.com/ltkong218/FastFlowNet) for evaluation, which can achieve on par unsupervised optical flow accuracy with other heavier methods.
 
 |             | Sintel Clean Train (AEPE) | Sintel Clean Test (AEPE) | KITTI 2015 Train (AEPE) | KITTI 2015 Test (Fl-all) |
 |:-----------:|:------------------------:|:------------------------:|:------------------------:|:------------------------:|
@@ -36,19 +35,13 @@ Unsupervised optical flow accuracy on Sintel Clean and KITTI 2015 datasets. Note
 |    UFlow    |           2.50           |           5.21           |           2.71           |          11.13%          |
 | MDFlow-Fast |           2.53           |           4.73           |           3.02           |          11.43%          |
 
-## Demos
+## Visualization
 
 Predicted bidirectional optical flow and occlusion map of efficient FastFlowNet on GTA V.
 
-![](./data/output_gtav.png)
+![](./data/output_gtav_1.png)
 
-Predicted bidirectional optical flow and occlusion map of efficient FastFlowNet on MPI Sintel.
-
-![](./data/output_sintel.png)
-
-Predicted bidirectional optical flow and occlusion map of efficient FastFlowNet on KITTI 2015.
-
-![](./data/output_kitti.png)
+![](./data/output_gtav_2.png)
 
 ## Citation
 When using any parts of the Software or the Paper in your work, please cite the following paper:
