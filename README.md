@@ -16,13 +16,15 @@ Detailed framework of reliable mutual knowledge distillation for unsupervised op
 To our best knowledge, it is the first time that mutual knowledge distillation framework is introduced to unsupervised optical flow, which can efficiently leverage countless unlabeled video sequences for optical flow learning. Moreover, proposed MDFlow framework is general and does not depend on particular optical flow architectures (it can use any efficient teacher flow network and any powerful student flow network) and unsupervised initialization method.
 
 ## Environment
-Python == 3.6.x
+Python == 3.6.x/3.7.x/3.8.x
 
-PyTorch == 1.2.0
+CUDA == 10.x/11.x
 
-Download our pre-trained [FastFlowNet](https://github.com/ltkong218/FastFlowNet) teacher network and [RAFT](https://github.com/princeton-vl/RAFT) student network in this [link](https://www.dropbox.com/sh/m99c01b9140v0r2/AAAVTX27wEMlMGTXnRIeL9QMa?dl=0), and then put file <code> checkpoints</code> into the root dir.
+PyTorch == 1.6.x/1.7.x/1.8.x/1.9.x/1.10.x/1.11.x
 
-Make sure that [<code>Pytorch-Correlation-extension</code>](https://github.com/ClementPinard/Pytorch-Correlation-extension) is installed successfully. You can refer to [FastFlowNet](https://github.com/ltkong218/FastFlowNet) for more installation details.
+Download our pre-trained [FastFlowNet](https://github.com/ltkong218/FastFlowNet) teacher network and [RAFT](https://github.com/princeton-vl/RAFT) student network in this [link](https://www.dropbox.com/sh/m99c01b9140v0r2/AAAVTX27wEMlMGTXnRIeL9QMa?dl=0), and then put file <code>checkpoints</code> into the root dir.
+
+Make sure that [<code>Pytorch-Correlation-extension</code>](https://github.com/ClementPinard/Pytorch-Correlation-extension) is installed successfully by running <code>pip install spatial-correlation-sampler==0.4.0</code>. You can refer to [FastFlowNet](https://github.com/ltkong218/FastFlowNet) for more installation details.
 
 ## Performance
 
